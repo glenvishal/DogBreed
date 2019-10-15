@@ -12,20 +12,14 @@ Application is built using spring-boot framework.
 ## Configuration before execution of the application
 Edit application.yml file located in main -> resources folder
 
-app:
-  external:
-    url: "https://dog.ceo/api/breeds/image/random"
-  access-key: aws-access-key
-  secret-key: aws-secret-key
-  region: region where the s3 bucket is created
-  bucket-name: bucket name
-  download-dir: temp directory. Please note the file extension for Linux or Windows machine
-
-spring:
-  datasource:
-    url: jdbc url connector to the DB
-    username: Username
-    password: Password
+1. access-key: aws-access-key
+2. secret-key: aws-secret-key
+3. region: region where the s3 bucket is created
+4. bucket-name: bucket name
+5. download-dir: temp directory. Please note the file extension for Linux or Windows machine
+6. url: jdbc url connector to the DB
+7. username: Username
+8. password: Password
     
 ## Executing the application
 Locate DogBreedApplication.java in main -> java -> com -> dog folder and run it as Java application. Spring boot service will
