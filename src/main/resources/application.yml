@@ -1,0 +1,20 @@
+app:
+  external:
+    url: "https://dog.ceo/api/breeds/image/random"
+  access-key: "AKIAIRMGCJX4NXMP7AGQ"
+  secret-key: "wnru86dfP3noozKq+LhyJtJ/50xtYwwCSOz3U4K1"
+  region: "us-east-2"
+  bucket-name: "dogbreed-sample"
+  download-dir: "/home/glenvishal/git/"
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dog?useSSL=false&serverTimezone=UTC
+    username: root
+    password: password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        ddl-auto: update
+
